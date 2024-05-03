@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    --dashboard: #1B1F22;
+    --sidebar: #111416;
+    --sidebar-hover: #232629;
+    --sidebar-active: #292B2D;
+    --text: #9C9C9C;
+    --dull-text: #707070;
+    --text-hover: #DDDDDD;
+    --divider: #333333;
+  }
+}
