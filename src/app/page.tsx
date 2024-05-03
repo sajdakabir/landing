@@ -37,8 +37,8 @@ export default function Home() {
             />
           </button>
           <div className="mt-2">
-            <Link href={""} className="text-xs text-dull-text underline">
-              Available for web
+            <Link href={""} className="text-xs text-dull-text">
+              We&apos;re currently in a private alpha.
             </Link>
           </div>
         </div>
