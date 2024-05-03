@@ -1,7 +1,6 @@
 import Footer from "@/components/footer/Footer";
 import HomeNavbar from "@/components/header/HomeNavbar";
 import { MoveRight } from "lucide-react";
-import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
@@ -37,9 +36,9 @@ export default function Home() {
             />
           </button>
           <div className="mt-2">
-            <Link href={""} className="text-xs text-dull-text">
+            <p className="text-xs text-dull-text">
               We&apos;re currently in a private alpha.
-            </Link>
+            </p>
           </div>
         </div>
       </section>

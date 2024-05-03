@@ -6,8 +6,7 @@ const Footer = () => {
   return (
     <footer className="bottom-0 flex items-center justify-between w-full h-20">
       <div className="flex items-center gap-x-2 text-sm">
-        Crafted with <Heart size={14} /> and a lot&apos;s of{" "}
-        <Coffee size={15} />
+        Crafted with <Heart size={14} /> for makers on the internet.
       </div>
 
       <div className="flex items-center gap-x-4">
