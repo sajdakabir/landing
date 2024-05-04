@@ -1,6 +1,5 @@
 import { Command } from "lucide-react";
 import Heart from "../icons/Heart";
-import Coffee from "../icons/Coffee";
 
 const Footer = () => {
   return (
@@ -9,7 +8,7 @@ const Footer = () => {
         Crafted with <Heart size={14} /> for makers on the internet.
       </div>
 
-      <div className="flex items-center gap-x-4">
+      <div className="flex items-center gap-x-3">
         <Command size={16} />
         <span>+</span>
         <span className="font-medium">K</span>
