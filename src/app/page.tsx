@@ -10,12 +10,13 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import CommandHandler from "@/components/CommandHandler";
 
 export default function Home() {
   return (
     <div className="h-screen w-full flex flex-col justify-between">
       <HomeNavbar />
-
+      <CommandHandler />
       <section className="h-full max-w-80 mx-auto grid place-content-center text-center">
         <Image
           src="/logo.png"
