@@ -1,31 +1,33 @@
-import React from "react";
-import Twitter from "../icons/Twitter";
 import Link from "next/link";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import { AlignCenter } from "lucide-react";
+import NavLinks from "./NavLinks";
 
 const HomeNavbar = () => {
   return (
-    <header className="sticky top-0 z-50 w-full">
+    <header className="sticky top-0 z-50 w-full px-8 md:px-0">
       <nav className="flex items-end justify-between h-16">
-        <Link href={""}>march</Link>
-        <div className="flex items-center gap-x-8 text-sm">
-        <Link
-            href={
-              "https://marchhq.notion.site/28ca05934f954d92bf006f410cce8745?v=fa9099b0ad4f450ca8d9997a8aecbee8&pvs=4"
-            }
-          >
-            Blog
-          </Link>
-          <Link
-            href={
-              "https://marchhq.notion.site/28ca05934f954d92bf006f410cce8745?v=fa9099b0ad4f450ca8d9997a8aecbee8&pvs=4"
-            }
-          >
-            Journals
-          </Link>
-          <Link href="https://twitter.com/march_dev">
-            <Twitter size={18} />
-          </Link>
+        <Link href={""} className="hover:text-text-hover">
+          march
+        </Link>
+        <div className="hidden md:flex items-center gap-x-8 text-sm">
+          <NavLinks />
         </div>
+
+        <Sheet>
+          <SheetTrigger className="md:hidden outline-none focus:outline-none data-[state=open]:translate-x-8 duration-700">
+            <AlignCenter size={20} />
+          </SheetTrigger>
+          <SheetContent className="bg-dashboard border-none">
+            <div className="flex flex-col gap-y-8 mt-16 ml-4 text-sm">
+              <NavLinks />
+            </div>
+          </SheetContent>
+        </Sheet>
       </nav>
     </header>
   );
