@@ -12,9 +12,9 @@ export default function Home() {
         <Image
           src="/logo.png"
           alt="Hero image"
-          width={140}
+          width={120}
           height={140}
-          className="mx-auto -mb-4"
+          className="mx-auto mb-2 h-auto w-auto"
         />
 
         <h2 className="text-2xl flex flex-col text-text-hover font-medium">
@@ -27,7 +27,7 @@ export default function Home() {
         </div>
 
         <div className="mt-6">
-          <button className="group mx-auto flex items-center px-3 py-[6px] text-xs text-text-hover border border-text-hover rounded-full hover:bg-text-hover hover:text-black">
+          <button className="group mx-auto flex items-center px-3 py-2 text-xs text-text-hover border border-text-hover rounded-full hover:bg-text-hover hover:text-black">
             Request Access{" "}
             <MoveRight
               className="ml-1 group-hover:translate-x-1 transition-transform duration-300"
@@ -35,7 +35,7 @@ export default function Home() {
               size={14}
             />
           </button>
-          <div className="mt-2">
+          <div className="mt-3">
             <p className="text-xs text-dull-text">
               We&apos;re currently in a private alpha.
             </p>
