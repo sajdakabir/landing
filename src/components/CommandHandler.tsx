@@ -37,7 +37,7 @@ const CommandHandler = () => {
         <CommandGroup heading="HQ" className="text-dull-text mt-4">
           <CommandItem aria-disabled="false">
             <Link href="https://cal.com/march" className="flex-grow">
-              Schedule a demo / On Boarding call
+              Schedule a demo/ onboarding call
             </Link>
           </CommandItem>
           <CommandItem>
