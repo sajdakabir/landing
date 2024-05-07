@@ -34,24 +34,52 @@ const CommandHandler = () => {
       />
       <CommandList>
         <CommandEmpty>No results found.</CommandEmpty>
-        <CommandGroup heading="Reach out" className="text-dull-text mt-4">
+        <CommandGroup heading="HQ" className="text-dull-text mt-4">
           <CommandItem aria-disabled="false">
-            <Link href="https://google.com">Schedule a demo</Link>
+            <Link href="https://cal.com/march" className="flex-grow">
+              Schedule a demo / On Boarding call
+            </Link>
           </CommandItem>
-          <CommandItem>On Boarding call</CommandItem>
+          <CommandItem>
+            <Link href="https://discord.gg/qpgZqt2cag" className="flex-grow">
+              Join discord
+            </Link>
+          </CommandItem>
         </CommandGroup>
         <CommandGroup heading="Read" className="text-dull-text mt-2">
-          <CommandItem>Journals</CommandItem>
-          <CommandItem>Changelog</CommandItem>
+          <CommandItem>
+            <Link
+              href="https://marchhq.notion.site/28ca05934f954d92bf006f410cce8745?v=16987117e945417fa84c36675def9269"
+              className="flex-grow"
+            >
+              Changelog
+            </Link>
+          </CommandItem>
+          <CommandItem>
+            <Link
+              href="https://marchhq.notion.site/28ca05934f954d92bf006f410cce8745?v=fa9099b0ad4f450ca8d9997a8aecbee8"
+              className="flex-grow"
+            >
+              Journals
+            </Link>
+          </CommandItem>
+          <CommandItem>
+            <Link
+              href="https://marchhq.notion.site/28ca05934f954d92bf006f410cce8745?v=c75cf2f947b14c3e8a83433340f7edb5"
+              className="flex-grow"
+            >
+              Memes
+            </Link>
+          </CommandItem>
         </CommandGroup>
         <CommandGroup heading="Social" className="text-dull-text mt-2">
           <CommandItem>
-            <Link href="https://google.com" className="flex flex-grow">
+            <Link href="https://x.com/march.dev" className="flex flex-grow">
               <Twitter size={10} />
               <span className="opacity-0">.</span>
             </Link>
           </CommandItem>
-          <CommandItem>LinkedIn</CommandItem>
+          {/* <CommandItem>LinkedIn</CommandItem> */}
         </CommandGroup>
       </CommandList>
     </CommandDialog>
