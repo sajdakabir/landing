@@ -1,6 +1,7 @@
 "use client";
 
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { SendRequest } from "@/server/loop-req";
 import { MoveRight } from "lucide-react";
 import { useState } from "react";
 
@@ -10,22 +11,10 @@ const RequestForm = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    try {
-      await fetch(
-        "https://app.loops.so/api/newsletter-form/clky11weo00q9l80oo39mxfp4",
-        {
-          method: "POST",
-          body: JSON.stringify({ "newsletter-form-input": email }),
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
-    } catch (error) {
-      console.error(error);
-    }
-    // Close the dialog
+    await SendRequest(email);
+    // Closing the dialog
     setOpen(false);
+    setEmail("");
   };
 
   return (
