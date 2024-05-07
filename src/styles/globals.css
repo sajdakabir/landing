@@ -26,4 +26,42 @@
   a {
     @apply active:scale-95 duration-150 disabled:active:scale-100 cursor-default;
   }
+
+  /* ===================== */
+  /* Command Dialog Styling Overrides */
+  /* ===================== */
+  [cmdk-item] {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+
+  [cmdk-group-heading] {
+    color: var(--text-hover) !important;
+    opacity: 50% !important;
+  }
+
+  [cmdk-input] {
+    height: auto !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    border-radius: 0.75rem !important;
+  }
+
+
+  /* ===================== */
+  /* Srollbar Styling      */
+  /* ===================== */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--dull-text);
+    border-radius: 4px;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--text);
+  }
 }

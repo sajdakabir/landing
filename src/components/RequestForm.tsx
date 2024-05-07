@@ -24,6 +24,8 @@ const RequestForm = () => {
     } catch (error) {
       console.error(error);
     }
+    // Close the dialog
+    setOpen(false);
   };
 
   return (
