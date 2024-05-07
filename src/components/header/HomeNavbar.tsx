@@ -10,7 +10,7 @@ import NavLinks from "./NavLinks";
 const HomeNavbar = () => {
   return (
     <header className="sticky top-0 z-50 w-full px-8 md:px-0">
-      <nav className="flex items-end justify-between h-16">
+      <nav className="flex items-end justify-between h-12 md:h-16">
         <Link href={""} className="hover:text-text-hover">
           march
         </Link>

@@ -17,7 +17,7 @@ export default function Home() {
     <div className="h-screen w-full flex flex-col justify-between">
       <HomeNavbar />
       <CommandHandler />
-      <section className="h-full max-w-80 mx-auto grid place-content-center text-center">
+      <section className="h-full max-w-72 md:max-w-80 mx-auto grid place-content-center text-center">
         <Image
           src="/logo.png"
           alt="Hero image"
