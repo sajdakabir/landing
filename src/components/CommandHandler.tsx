@@ -29,13 +29,13 @@ const CommandHandler = () => {
   return (
     <CommandDialog open={open} onOpenChange={setOpen}>
       <CommandInput
-        placeholder="Type a command or search..."
+        placeholder="Search..."
         className="text-sm rounded-full px-3 py-1 border-[1px] border-[#2a2c31] bg-[#4d4d4d0a] text-text-hover"
       />
       <CommandList>
         <CommandEmpty>No results found.</CommandEmpty>
         <CommandGroup heading="Reach out" className="text-dull-text mt-4">
-          <CommandItem>
+          <CommandItem aria-disabled="false">
             <Link href="https://google.com">Schedule a demo</Link>
           </CommandItem>
           <CommandItem>On Boarding call</CommandItem>

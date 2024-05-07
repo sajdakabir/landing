@@ -37,7 +37,8 @@
 
   [cmdk-group-heading] {
     color: var(--text-hover) !important;
-    opacity: 50% !important;
+    opacity: 40% !important;
+    font-weight: 300 !important;
   }
 
   [cmdk-input] {
@@ -55,13 +56,30 @@
     width: 6px;
     height: 6px;
   }
+
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: var(--dull-text);
     border-radius: 4px;
   }
+
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: var(--text);
+  }
+
+
+  /* ===================== */
+  /* Select Styling         */
+  /* ===================== */
+  ::-moz-selection {
+    /* Code for Firefox */
+    color: var(--text-hover);
+    background: var(--sidebar-hover);
+  }
+
+  ::selection {
+    color: var(--text-hover);
+    background: var(--sidebar-hover);
   }
 }
