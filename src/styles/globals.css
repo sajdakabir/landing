@@ -19,7 +19,7 @@
 
 @layer base {
   input {
-    @apply rounded-full text-sm placeholder:text-text focus:outline-none px-3 py-1 border-[1px] border-[#2a2c31] bg-[#4d4d4d0a] text-text-hover;
+    @apply rounded-xl text-sm placeholder:text-text focus:outline-none px-3 py-1 border-[1px] border-[#2a2c31] bg-[#4d4d4d0a] text-text-hover;
   }
 
   button,

@@ -2,14 +2,7 @@ import Footer from "@/components/footer/Footer";
 import HomeNavbar from "@/components/header/HomeNavbar";
 import { MoveRight } from "lucide-react";
 import Image from "next/image";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import CommandHandler from "@/components/CommandHandler";
 
 export default function Home() {
@@ -38,7 +31,7 @@ export default function Home() {
         <div className="mt-6">
           <Dialog>
             <DialogTrigger asChild className="outline-none focus:outline-none">
-              <button className="group mx-auto flex items-center px-3 py-2 text-xs text-text-hover border border-text-hover rounded-full hover:bg-text-hover hover:text-black">
+              <button className="group mx-auto flex items-center px-3 py-2 text-xs text-text-hover border border-text-hover rounded-xl hover:bg-text-hover hover:text-black">
                 Request Access{" "}
                 <MoveRight
                   className="ml-1 group-hover:translate-x-1 transition-transform duration-300"
@@ -47,30 +40,20 @@ export default function Home() {
                 />
               </button>
             </DialogTrigger>
-            <DialogContent className="bg-dashboard rounded-xl md:rounded-2xl border-none h-fit w-fit md:w-96">
-              <form className="w-fit mx-auto flex flex-col gap-y-2">
-                <input
-                  type="text"
-                  placeholder="Full Name"
-                  className="md:mx-auto md:w-72"
-                  id="username"
-                  autoComplete="username"
-                />
+            <DialogContent className="bg-dashboard rounded-xl md:rounded-2xl border-none h-fit w-fit px-4 pt-4 pb-3">
+              <div className="w-fit mx-auto flex flex-col md:flex-row items-center gap-y-4 md:gap-x-4">
                 <input
                   type="text"
                   placeholder="Enter your email"
-                  className="md:mx-auto md:w-72"
+                  className="md:mx-auto md:w-56 py-2"
                   id="email"
                   autoComplete="email"
                 />
 
-                <button
-                  type="submit"
-                  className="mt-3 mx-auto flex items-center justify-center px-3 py-2 text-xs text-text-hover border border-text-hover rounded-full hover:bg-text-hover hover:text-black"
-                >
-                  Submit
+                <button className="mx-auto flex items-center justify-center px-2 py-[6px] text-sm text-text-hover border border-text-hover rounded-[10px] hover:bg-text-hover hover:text-black">
+                  Request
                 </button>
-              </form>
+              </div>
             </DialogContent>
           </Dialog>
           <div className="mt-3">
