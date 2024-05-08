@@ -1,9 +1,5 @@
 import Link from "next/link";
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { AlignCenter } from "lucide-react";
 import NavLinks from "./NavLinks";
 
@@ -23,9 +19,7 @@ const HomeNavbar = () => {
             <AlignCenter size={20} />
           </SheetTrigger>
           <SheetContent className="bg-dashboard border-none">
-            <div className="flex flex-col gap-y-8 mt-16 ml-4 text-sm">
-              <NavLinks />
-            </div>
+            <NavLinks isMobile />
           </SheetContent>
         </Sheet>
       </nav>
