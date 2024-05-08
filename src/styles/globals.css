@@ -24,7 +24,7 @@
 
   button,
   a {
-    @apply active:scale-95 duration-150 disabled:active:scale-100 cursor-default;
+    @apply active:scale-95 duration-150 disabled:active:scale-100;
   }
 
   /* ===================== */
