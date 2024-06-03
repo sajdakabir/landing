@@ -49,7 +49,7 @@ const NavLinks: FC<NavLinksProps> = ({ isMobile }) => {
         <div>
           <span className="text-xs text-dull-text">Social</span>{" "}
           <div className="flex flex-col gap-y-6 mt-2">
-            <Link href="https://x.com/marchhq_" className="flex flex-grow">
+            <Link href="https://x.com/_marchhq" className="flex flex-grow">
               <Twitter size={18} />
               <span className="opacity-0">.</span>
             </Link>
@@ -75,7 +75,7 @@ const NavLinks: FC<NavLinksProps> = ({ isMobile }) => {
       >
         Journals
       </Link>
-      <Link href="https://x.com/marchhq_">
+      <Link href="https://x.com/_marchhq">
         <Twitter size={18} />
       </Link>
     </>
