@@ -11,7 +11,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "march",
-  description: "a light weight sprint planner",
+  description: "second brain for makers",
 };
 
 export default function RootLayout({

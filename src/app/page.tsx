@@ -13,13 +13,13 @@ export default function Home() {
         <Image
           src="/logo.png"
           alt="Hero image"
-          width={120}
-          height={140}
+          width={65}
+          height={75}
           className="mx-auto mb-2 h-auto w-auto"
         />
 
         <h2 className="text-2xl flex flex-col text-text-hover font-medium">
-          <span>Sprint planner for</span>
+          <span>second brain for</span>
           <span>next generation makers.</span>
         </h2>
 

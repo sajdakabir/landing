@@ -63,7 +63,7 @@ const NavLinks: FC<NavLinksProps> = ({ isMobile }) => {
     <>
       <Link
         href={
-          "https://marchhq.notion.site/28ca05934f954d92bf006f410cce8745?v=fa9099b0ad4f450ca8d9997a8aecbee8&pvs=4"
+          "https://blog.march.cat"
         }
       >
         Blog

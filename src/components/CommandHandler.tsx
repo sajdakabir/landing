@@ -74,7 +74,7 @@ const CommandHandler = () => {
         </CommandGroup>
         <CommandGroup heading="Social" className="text-dull-text mt-2">
           <CommandItem>
-            <Link href="https://x.com/march.dev" className="flex flex-grow">
+            <Link href="https://x.com/_marchhq" className="flex flex-grow">
               <Twitter size={10} />
               <span className="opacity-0">.</span>
             </Link>
